@@ -14,7 +14,7 @@ interface SideNavToggle{
 export class AppComponent {
   title = 'vertical-navbar_angular';
 
-  isSideNavCollapsed = false;
+  isSideNavCollapsed = true;
   screenWidth = 0;
 
   onToggleSideNav(data: SideNavToggle):void{
