@@ -8,3 +8,22 @@
 body{
     position: relative;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    background-color: #fff;
+    margin: 0 .25rem .5rem #e6edef;
+}
+
+.card-head{
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-body{
+    padding: 1rem 1.5rem;
+}
