@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+
+interface SideNavToggle{
+  collapsed: boolean;
+  screenwidth:number;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +13,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vertical-navbar_angular';
+
+  isSideNavCollapsed = false;
+  screenWidth = 0;
+
+  onToggleSideNav(data: SideNavToggle):void{
+    this.screenWidth = data.screenwidth;
+    this.isSideNavCollapsed = data.collapsed;
+  }
 }
+
